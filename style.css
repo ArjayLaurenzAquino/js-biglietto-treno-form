@@ -1,0 +1,28 @@
+main {
+    background-color: rgb(177, 41, 91);
+}
+
+.container-height {
+    height: 1000px;
+}
+
+.h2-bg-color {
+    background-color: rgb(177, 41, 91);
+}
+
+.btn-color {
+    border-color: rgba(66, 65, 65, 0.577);
+    border-width: 1px;
+    border-style: solid;
+    font-size: larger;
+    padding-right: 10px;
+    padding-left: 10px;
+    border-radius: 6px;
+    color: rgb(177, 41, 91);
+    background-color: rgb(210, 210, 210);
+    margin: 10px;
+
+}
+.border-color {
+    border-color: rgb(177, 41, 91);
+}

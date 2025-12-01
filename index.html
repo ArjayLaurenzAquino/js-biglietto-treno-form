@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.8/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <main>
+
+        <div class="container container-height d-flex align-items-center justify-content-center">
+            <div class="row">
+                <div class="col-12 p-5">
+                    <h2 class="text-light text-center">CALCOLA IL PREZZO DEL TUO BIGLIETTO</h2>
+                    <form>
+                        <div class="row bg-light justify-content-center mb-3">
+                            <div class="col-4 my-3 ps-5">
+                                <label class="form-label">Nome Cognome</label>
+                                <input name="name" id="nameInput" type="text" class="form-control border-color"
+                                    placeholder="Inserire nome e cognome">
+                            </div>
+                            <div class="col-4 my-3">
+                                <label class="form-label">Km da percorrere</label>
+                                <input name="distance" id="distance" type="number" class="form-control"
+                                    placeholder="Inserire i kom da percorrere">
+                            </div>
+                            <div class="col-4 my-3 pe-5">
+                                <label class="form-label">Fascia d'età</label>
+                                <select class="form-select" name="age" id="age">
+                                    <option value="minor">Minorenne</option>
+                                    <option value="standard">Maggiorenne</option>
+                                    <option value="senior">Over 65</option>
+                                </select>
+                            </div>
+                            <div class="col-auto my-3 gap-4">
+                                <button id="create" class="fw-bold btn-color">Genera</button>
+                                <button type="reset" class="fw-bold btn-color">Annulla</button>
+                            </div>
+
+                        </div>
+                    </form>
+                    <h2 class="text-light text-center">IL TUO BIGLIETTO</h2>
+                    <div class="row bg-light">
+                        <div class="col-12 fw-bold">DETTAGLIO PASSEGGERI</div>
+                        <div class="col-12">
+                            <table>
+                                <tr>
+                                    <th class="bg-secondary fw-bold">NOME PASSENGERO</th>
+                                    <th>Offerta</th>
+                                    <th>Carrozza</th>
+                                    <th>Codice CP</th>
+                                    <th>Costo Boglietto</th>
+                                </tr>
+                                <tr>
+                                    <td class="bg-secondary fw-bold" id="name">1</td>
+                                    <td id="offer">2</td>
+                                    <td>3</td>
+                                    <td>4</td>
+                                    <td id="finalPrice"></td>
+                                </tr>
+                            </table>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="./script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.8/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
