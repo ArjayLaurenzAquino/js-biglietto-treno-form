@@ -9,7 +9,7 @@ btnCreateEl.addEventListener("click", function(event) {
     event.preventDefault();
     let priceBase = distanceEl.value * 0.21;
     let price = 0;
-    
+    console.log(distanceEl.value,10)
     if (ageEl.value == "minor") {
         price = priceBase * 0.8;
         offerEl.textContent = "Offerta Minorenni"

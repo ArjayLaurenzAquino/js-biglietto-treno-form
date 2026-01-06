@@ -1,10 +1,9 @@
 main {
     background-color: rgb(177, 41, 91);
+    height: 100vh;
+
 }
 
-.container-height {
-    height: 1000px;
-}
 
 .h2-bg-color {
     background-color: rgb(177, 41, 91);
@@ -23,6 +22,15 @@ main {
     margin: 10px;
 
 }
+
 .border-color {
     border-color: rgb(177, 41, 91);
+}
+
+.cell-size {
+    width: 17.5%
+}
+
+.cell-offer-size {
+    width: 22.5%;
 }
